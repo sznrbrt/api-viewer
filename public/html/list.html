@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="row text-center">
+      <img ng-show="pokemons.length > 0" class="pokeballList" src="https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG" alt="">
+    </div>
+    <div class="row text-center" ng-hide="pokemons.length > 0">
+      <img src="http://i929.photobucket.com/albums/ad133/ScorchNite/RotatingPokeball.gif" alt="">
+      Loading...
+    </div>
+  </div>
+  <div class="col-xs-12 text-center">
+    <div class="list-group pokemonList">
+      <a href="#" class="list-group-item" ng-repeat="pokemon in pokemons track by $index" ui-sref="pokemon({id:pokemon.id})">
+        {{ pokemon.name }}
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 text-center">
+    <nav>
+      <ul class="pager">
+        <li ng-hide="previousOffset <= 0"><a ui-sref="list({offset: previousOffset})">Previous</a></li>
+        <li><a ui-sref="list({offset: nextOffset})">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

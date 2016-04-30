@@ -1,0 +1,82 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.navbar {
+  border-radius: 0;
+  background-color: #D43315;
+}
+
+.navbar-default {
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.whiteFont {
+  color:white;
+}
+
+.logo {
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 1.4em;
+}
+
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:focus {
+  text-decoration: none;
+  color:white;
+}
+
+.pokeball {
+  margin-top: 100px;
+  height: 200px;
+}
+
+.start {
+  margin-top: 20px;
+  font-size: 1.5em;
+  padding: 10px 50px;
+  background-color: #D43315;
+}
+
+.pokeballList {
+  height: 100px;
+}
+
+.pokemonList {
+  margin-top: 20px;
+}
+
+.panel {
+  margin: 0 30px;
+}
+
+.backBtn {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.glyphicon-menu-left {
+  position: relative;
+  margin-right: 5px;
+  top: 2px;
+}
