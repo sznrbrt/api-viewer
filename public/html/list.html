@@ -20,7 +20,7 @@
   <div class="col-xs-12 text-center">
     <nav>
       <ul class="pager">
-        <li ng-disabled="previousOffset < 0"><a ui-sref="list({offset: previousOffset})">Previous</a></li>
+        <li ng-hide="previousOffset < 0"><a ui-sref="list({offset: previousOffset})">Previous</a></li>
         <li><a ui-sref="list({offset: nextOffset})">Next</a></li>
       </ul>
     </nav>
