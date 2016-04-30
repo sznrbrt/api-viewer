@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('apiviewApp', ['ui.router', 'oitozero.ngSweetAlert', 'ui.bootstrap']);
+var app = angular.module('apiviewApp', ['ui.router', 'ui.bootstrap']);
 
 app.config(function($stateProvider, $urlRouterProvider){
 
