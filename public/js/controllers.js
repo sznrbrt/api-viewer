@@ -15,8 +15,8 @@ app.controller('listCtrl', function($scope, Pokemons, $stateParams) {
       });
       var nextOffset = parseInt(pokemons.data.next.split('&')[1].split('=')[1]);
       $scope.nextOffset = nextOffset;
-      console.log(nextOffset - 10);
-      $scope.previousOffset = nextOffset !== 10 ? toString(nextOffset - 10) : toString(0);
+      $scope.previousOffset = nextOffset - 20;
+      console.log($scope.previousOffset);
     });
 
   function capitalize(word){
